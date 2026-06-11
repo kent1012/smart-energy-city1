@@ -9,7 +9,7 @@ Educational game prototype for Astana energy and ecology.
 
 ## Backend
 ```bash
-cd /home/runner/work/smart-energy-city1/smart-energy-city1/kent1012/smart-energy-city1/backend/SmartEnergyCity.Api
+cd backend/SmartEnergyCity.Api
 dotnet restore
 dotnet run
 ```
@@ -24,7 +24,7 @@ If `TwoGis:ApiKey` is empty, the API uses fallback Astana district/building data
 
 ## Frontend
 ```bash
-cd /home/runner/work/smart-energy-city1/smart-energy-city1/kent1012/smart-energy-city1/frontend
+cd frontend
 npm install
 npm run dev
 ```

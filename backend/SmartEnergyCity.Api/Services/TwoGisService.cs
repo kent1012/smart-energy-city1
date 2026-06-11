@@ -59,13 +59,13 @@ public sealed class TwoGisService(
                     continue;
                 }
 
-                var fallback = mapByName.Values.FirstOrDefault(x => name.Contains(x.NameRu, StringComparison.OrdinalIgnoreCase) || name.Contains(x.NameKz, StringComparison.OrdinalIgnoreCase));
-                if (fallback is null)
+                var matchedDistrict = mapByName.Values.FirstOrDefault(x => name.Contains(x.NameRu, StringComparison.OrdinalIgnoreCase) || name.Contains(x.NameKz, StringComparison.OrdinalIgnoreCase));
+                if (matchedDistrict is null)
                 {
                     continue;
                 }
 
-                extracted.Add(fallback);
+                extracted.Add(matchedDistrict);
             }
 
             return extracted.Count > 0 ? extracted : FallbackDistricts;
