@@ -1,0 +1,6 @@
+@SmartEnergyCity.Api_HostAddress = http://localhost:5299
+
+GET {{SmartEnergyCity.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
